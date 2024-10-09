@@ -92,7 +92,7 @@ LEFT JOIN Bestellungen ON Kunden.KundenID = Bestellungen.KundenID;
     <button class="execute-btn" onclick="executeQuery('leftJoinInput', 'leftJoinResult')">Ausführen</button>
     <div id="leftJoinResult" class="result"></div>
 
-    <h2>RIGHT JOIN Beispiel</h2>
+<!--     <h2>RIGHT JOIN Beispiel</h2>
     <p>Ein RIGHT JOIN gibt alle Zeilen aus der rechten Tabelle und die übereinstimmenden Zeilen aus der linken Tabelle zurück.</p>
     <textarea class="sql-input" id="rightJoinInput">
 SELECT Kunden.Name, Bestellungen.Produkt
@@ -102,7 +102,7 @@ RIGHT JOIN Bestellungen ON Kunden.KundenID = Bestellungen.KundenID;
     <button class="execute-btn" onclick="executeQuery('rightJoinInput', 'rightJoinResult')">Ausführen</button>
     <div id="rightJoinResult" class="result"></div>
 
-    <!-- <h2>FULL JOIN Beispiel (simuliert)</h2>
+    <h2>FULL JOIN Beispiel (simuliert)</h2>
     <p>Ein FULL JOIN gibt alle Zeilen zurück, wenn es eine Übereinstimmung in einer der Tabellen gibt. Da MySQL FULL JOIN nicht direkt unterstützt, kann dies durch UNION von LEFT JOIN und RIGHT JOIN simuliert werden.</p>
     <textarea class="sql-input" id="fullJoinInput">
 SELECT Kunden.Name, Bestellungen.Produkt
